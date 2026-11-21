@@ -1,5 +1,7 @@
 # Convolutional coding lab
 
+**[View the report in your browser](https://Michaelhoang8.github.io/convolutional-coding-lab/)**
+
 A source-built, terminated **K=3, rate-1/2 convolutional encoder** with generators **(7,5) in octal**, plus full-frame hard and soft Viterbi decoding. A reproducible simulation compares both decoders with uncoded BPSK at equal information-bit `Eb/N0`, including termination energy.
 
 The implementation uses the Python standard library. NumPy, Matplotlib and Pillow are used only to render evidence. All bits and channel samples are synthetic. Code, analysis and documentation were created with AI assistance; this is a simulation study, not a hardware modem measurement.
