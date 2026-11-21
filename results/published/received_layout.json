@@ -1,0 +1,7 @@
+{
+  "format": "IEEE754 float64 little-endian, no header",
+  "row_order": "frames.csv order",
+  "per_frame": "uncoded_received[information_length], then coded_received[2*(information_length+2)]",
+  "bytes": 3136000,
+  "note": "These are actual channel samples passed to the decoders; shared by hard and soft coded comparisons"
+}

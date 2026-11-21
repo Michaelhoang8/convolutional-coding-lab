@@ -1,0 +1,44 @@
+{
+  "captured_at_utc": "2026-11-21T01:01:02.220011+00:00",
+  "source": "Actual browser rendering of docs/report.html",
+  "recording": "Continuous automated browser review; not manual development footage",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "page_title": "Convolutional coding lab",
+  "report_sha256_normalized_text": "d9fe0dc7152325a6532a19e72e3f7876ebe4ab5c2402f3bd4b20c8e7c10c6d8d",
+  "video_sha256": "8b6aa8cfb15533ad41fae515f33575e7cee8e827477a94bad291dab81ff5e88c",
+  "captures": [
+    {
+      "path": "docs/screenshots/01_overview.png",
+      "section": "overview",
+      "sha256": "45df5290968352dcac8219e12aecf5ff254af5619991588f33b23e7da6abf681"
+    },
+    {
+      "path": "docs/screenshots/02_trellis.png",
+      "section": "trellis",
+      "sha256": "6e88b88b382a7a76acb172fd2745c10d71b019f6a2e327953aec3e08caf08e5f"
+    },
+    {
+      "path": "docs/screenshots/03_energy.png",
+      "section": "energy",
+      "sha256": "0b58e2b09a59081dd81cb1acf90a6c9ad095f35d42a8946f52f768eb23e31fc8"
+    },
+    {
+      "path": "docs/screenshots/04_errors.png",
+      "section": "errors",
+      "sha256": "68d5cdbb11a807a7ab19441653796fca8887bd3354cdca40049cd1494d3c7939"
+    },
+    {
+      "path": "docs/screenshots/05_uncertainty.png",
+      "section": "uncertainty",
+      "sha256": "9df667882ff637f6558ed1c78783d91ce11463a6e2d1d3cd94f6700b7c9f2e60"
+    },
+    {
+      "path": "docs/screenshots/06_validation.png",
+      "section": "validation",
+      "sha256": "6d4bef57a7a8d6720375b0566044db2fb9b40527b70bbe0e130d51a370b29974"
+    }
+  ]
+}

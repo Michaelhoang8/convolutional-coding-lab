@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-11-21T00:45:09.477594+00:00",
+  "completed_utc": "2026-11-21T00:45:10.475977+00:00",
+  "python": "3.13.17",
+  "os": "Windows",
+  "architecture": "AMD64",
+  "frames_per_point": 400,
+  "information_length": 64,
+  "snr_points_db": [
+    0.0,
+    1.5,
+    3.0,
+    4.5,
+    6.0
+  ],
+  "total_frames": 2000,
+  "timed_decoder_calls": 6000,
+  "base_seed": 20261121,
+  "order_seed": 9182,
+  "source_sha256_lf": {
+    "src/convcode/core.py": "49388de2bbef126534193ad30fb760cc7727d4e83a0dab78814028e91370c1ea",
+    "src/convcode/channel.py": "0ffed4c3c08926cf6ef6621eef4eb7ea81213d7afb14fa823af517c4789884d9",
+    "scripts/run_study.py": "c2190d31c12c3d20e0ce72e039ca43e6bf373d50ccecd5c18fab3ffdefc1d4d7"
+  },
+  "source_hash_policy": "CRLF and CR normalized to LF before hashing, captured before simulation",
+  "energy": "Es=1. Eb per information bit includes every transmitted tail symbol. R_eff=L/[2(L+2)] for coded frames, 1 for uncoded.",
+  "uncertainty": "Wilson95 intervals only for independent equal-distribution frame-error indicators at fixed Eb/N0; no binomial intervals on correlated decoded bit errors",
+  "timing_scope": "One warmup, complete per-frame decoder calls; hard includes slicing; noise generation and file I/O excluded. Each frame is a different observation, not repeated timing of one input.",
+  "provenance": "Owned pseudorandom bits and AWGN only; ideal synchronized real BPSK channel, no modem hardware"
+}

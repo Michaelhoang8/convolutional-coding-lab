@@ -1,0 +1,43 @@
+name: Verify codec and preserved evidence
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e .
+      - run: python -m unittest discover -s tests -v
+      - name: Generate a separate pilot
+        run: python scripts/run_study.py --frames 20 --out outputs/ci
+      - name: Check fresh pilot evidence
+        run: |
+          python - <<'PY'
+          import csv, hashlib, json
+          from pathlib import Path
+          run = Path('outputs/ci')
+          environment = json.loads((run / 'environment.json').read_text())
+          assert environment['total_frames'] == 100
+          assert environment['timed_decoder_calls'] == 300
+          for row in json.loads((run / 'manifest.json').read_text()):
+              data = (run / row['path']).read_bytes()
+              assert len(data) == row['bytes']
+              assert hashlib.sha256(data).hexdigest() == row['sha256']
+          with (run / 'frames.csv').open(newline='') as stream:
+              fresh = {(r['snr_index'], r['frame']): r for r in csv.DictReader(stream)}
+          with Path('results/published/frames.csv').open(newline='') as stream:
+              for row in csv.DictReader(stream):
+                  other = fresh.get((row['snr_index'], row['frame']))
+                  if other:
+                      for method in ['uncoded', 'hard', 'soft']:
+                          assert row[f'{method}_decoded_bits'] == other[f'{method}_decoded_bits']
+                          assert row[f'{method}_information_errors'] == other[f'{method}_information_errors']
+          PY
+      - name: Published evidence is unchanged
+        run: git diff --exit-code -- results/published docs/assets

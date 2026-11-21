@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-11-21T00:50:44.496073+00:00",
+  "python": "3.13.17",
+  "pillow": "13.0.0",
+  "ffmpeg": "ffmpeg version 2024-01-04-git-33698ef891-full_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+  "input": "results/published/demo.json",
+  "input_sha256": "bc78d819ddc4c13439431a3e86a088ebc496a6be7e23c0d711b68a8ea75c0aa7",
+  "source_sha256_lf": "7c04d645d24d2fa9d6d07c1f45783614f495a570b9415df56aba1d583b3739f1",
+  "video_sha256": "d292aac73234c335850fc035f963d60c6e400273be8e365a6d3ac6bfd83e68ad",
+  "poster_sha256": "c942b0c4a59b928163eedb5edb0d1b00e4fe302d53bd077229bd18d4ec70c4b2",
+  "duration_seconds": 8,
+  "fps": 30,
+  "frames": 240,
+  "dimensions": [
+    1280,
+    760
+  ],
+  "audio": false,
+  "scope": "Saved actual survivor pointers and metrics, then reverse traceback; animation timing is illustrative, not runtime. Hard path appears at the end for comparison."
+}

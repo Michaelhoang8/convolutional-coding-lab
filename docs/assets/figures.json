@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-11-21T00:57:19.203625+00:00",
+  "numpy": "2.3.5",
+  "matplotlib": "3.11.2",
+  "source_sha256_lf": "639fc0b835323a530d4c64f38026a32b491abd1020698a47b7368c900964c104",
+  "inputs": {
+    "results/published/summary.csv": "0a685d14bdfd780c9773e0effb12878be47dbb0be2393cca782a0e9f426efb1c",
+    "results/published/environment.json": "71055ace9efa98ae464476527b379aa9686b8aa1179e43e36da07dda891071bf",
+    "results/published/demo.json": "bc78d819ddc4c13439431a3e86a088ebc496a6be7e23c0d711b68a8ea75c0aa7"
+  },
+  "outputs": {
+    "assets/information-ber.png": "eb062dbfabe5a4676874c2aa2b9a837f43b422a46ad56d0123cf52276d1031e1",
+    "assets/block-errors.png": "5f91dd5c185346bf380d18d922880e7bd9f0006d4a435ab4db57c3ca6704a30d",
+    "assets/received-samples.png": "a5a6638fe2284e7677e757472b89640ac89be0d636081ed688c8b3d8b771e604",
+    "report.html": "d9fe0dc7152325a6532a19e72e3f7876ebe4ab5c2402f3bd4b20c8e7c10c6d8d"
+  }
+}

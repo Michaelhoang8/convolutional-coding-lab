@@ -1,0 +1,37 @@
+[
+  {
+    "path": "demo.json",
+    "bytes": 5718,
+    "sha256": "bc78d819ddc4c13439431a3e86a088ebc496a6be7e23c0d711b68a8ea75c0aa7"
+  },
+  {
+    "path": "environment.json",
+    "bytes": 1449,
+    "sha256": "71055ace9efa98ae464476527b379aa9686b8aa1179e43e36da07dda891071bf"
+  },
+  {
+    "path": "frames.csv",
+    "bytes": 1627980,
+    "sha256": "36ca587b8e1178b114df3aae4ce5919a7581f763c924039178048407a3a98a24"
+  },
+  {
+    "path": "measurements.csv",
+    "bytes": 144542,
+    "sha256": "4dc6fd5a882319e48518b258e6761f32d4f907c483b31d4cb18d1120a55e9c30"
+  },
+  {
+    "path": "received.f64",
+    "bytes": 3136000,
+    "sha256": "b8108d2d65a345dba409c9f2a6194980a718b3b74f537ae821c1aa305d365f3e"
+  },
+  {
+    "path": "received_layout.json",
+    "bytes": 328,
+    "sha256": "80844e1efad93925ec3785a721ac4f51de28e9a7ce624070ec57f5547e1644b7"
+  },
+  {
+    "path": "summary.csv",
+    "bytes": 2277,
+    "sha256": "0a685d14bdfd780c9773e0effb12878be47dbb0be2393cca782a0e9f426efb1c"
+  }
+]
